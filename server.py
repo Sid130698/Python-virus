@@ -40,7 +40,7 @@ while 1:
         filepath= input(str("Please enter the file path including the file path :"))
         conn.send(filepath.encode())
         file=conn.recv(100000)
-        filenmae=input("Please enter the file namme for incoming file including the extension :")
+        filename=input("Please enter the file namme for incoming file including the extension :")
         new_file=open(filename,"wb")
         new_file.write(file)
         new_file.close()
